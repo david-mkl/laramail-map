@@ -1,5 +1,7 @@
 <?php
 
+namespace LaraMailMap;
+
 use Illuminate\Support\ServiceProvider;
 use LaraMailMap\MailMapModel;
 use MailMap\MailMap;
