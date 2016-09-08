@@ -3,6 +3,7 @@
 namespace LaraMailMap;
 
 use Illuminate\Support\Collection;
+use MailMap\MailMap;
 
 class MailMapModel
 {

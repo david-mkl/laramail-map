@@ -4,6 +4,8 @@ namespace LaraMailMap;
 
 use Illuminate\Support\ServiceProvider;
 use LaraMailMap\MailMapModel;
+use MailMap\Contracts\MailFactory as MailFactoryContract;
+use MailMap\MailFactory;
 use MailMap\MailMap;
 
 class LaraMailMapServiceProvider extends ServiceProvider
