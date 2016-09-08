@@ -1,0 +1,33 @@
+{
+    "name": "mail-map/laramail-map",
+    "type": "library",
+    "description": "Laravel interface for mail-map",
+    "keywords": ["php","imap","laravel"],
+    "homepage": "https://github.com/david-mk/laramail-map",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "David Lawrence",
+            "email": "david.mk.lawrence@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.22",
+        "illuminate/support": "5.3.*",
+        "mail-map/mail-map": "^1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "LaraMailMap\\": "src/LaraMailMap/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    }
+}
