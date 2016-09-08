@@ -3,7 +3,7 @@
 namespace LaraMailMap;
 
 use Illuminate\Support\ServiceProvider;
-use LaraMailMap\MailMapModel;
+use LaraMailMap\LaraMailMap;
 use MailMap\Contracts\MailFactory as MailFactoryContract;
 use MailMap\MailFactory;
 use MailMap\MailMap;
@@ -39,7 +39,5 @@ class LaraMailMapServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__.'/config/mailmap.php' => config_path('mailmap.php')
         ]);
-
-        MailMapModel::setImapConnection($this->app->make(MailMap::class));
     }
 }
