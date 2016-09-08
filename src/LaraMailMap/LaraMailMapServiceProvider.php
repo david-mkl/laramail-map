@@ -23,6 +23,10 @@ class LaraMailMapServiceProvider extends ServiceProvider
         $this->app->singleton(MailMap::class, function ($app) {
             return new MailMap(config('mailmap'), $app->make(MailFactoryContract::class));
         });
+
+        $this->mergeConfigFrom(
+            __DIR__.'/config/mailmap.php', 'mailmap'
+        );
     }
 
     /**
