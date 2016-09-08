@@ -66,4 +66,30 @@ return [
     */
 
     'encryption' => env('MAILMAP_ENC', 'ssl'),
+
+    /*
+    |--------------------------------------------------------------------------
+    | IMAP Mailboxes
+    |--------------------------------------------------------------------------
+    |
+    | List of mailboxes that LaraMailMap interfaces can use
+    |
+    */
+
+    'mailboxes' => [
+        'inbox' => 'INBOX'
+    ],
+
+    /*
+    |--------------------------------------------------------------------------
+    | Mail wrapper class
+    |--------------------------------------------------------------------------
+    |
+    | This is the primary class that the default LaraMailMap's MailFactory will
+    | wrap found emails in. This class must implement the MailMap\Contracts\Mail
+    | contract or else an InvalidArgumentException will be thrown
+    |
+    */
+
+    'mailwrapper' => \MailMap\Mail::class
 ];
